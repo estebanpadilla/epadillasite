@@ -6,6 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/loaderScene.css" rel="stylesheet">
+    <link href="css/gameScene.css" rel="stylesheet">
+    <link href="css/aboutMeScene.css" rel="stylesheet">
+    <link href="css/portfolioScene.css" rel="stylesheet">
+    <link href="css/educationScene.css" rel="stylesheet">
+    <link href="css/experienceScene.css" rel="stylesheet">
     <script type="text/javascript" src="js/lib/greensock/TweenMax.min.js"></script>
     <script type="text/javascript" src="js/lib/scrollmagic/ScrollMagic.js"></script>
     <script type="text/javascript" src="js/lib/scrollmagic/plugins/debug.addIndicators.js"></script>
@@ -15,13 +21,17 @@
 </head>
 
 <body>
-    <section id="loader">
-        <div class="loader">
-        </div>
-    </section>
-    <div w3-include-html="sections/section1.html"></div>
-    <div w3-include-html="sections/section2.html"></div>
-    <div w3-include-html="sections/section3.html"></div>
+    <div w3-include-html="scenes/LoaderScene.html"></div>
+    <div w3-include-html="scenes/GameScene.html"></div>
+    <div w3-include-html="scenes/AboutMeScene.html"></div>
+    <div w3-include-html="scenes/PortfolioScene.html"></div>
+    <div w3-include-html="scenes/EducationScene.html"></div>
+    <div w3-include-html="scenes/ExperienceScene.html"></div>
+    <!--<div w3-include-html="scenes/section1.html"></div>
+    <div w3-include-html="scenes/section2.html"></div>
+    <div w3-include-html="scenes/section3.html"></div>-->
+
+
 </body>
 
 </html>
