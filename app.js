@@ -2,6 +2,7 @@
 window.addEventListener('load', init, false);
 
 function init() {
+    w3IncludeHTML();
 
     let width = window.innerWidth;
     let height = window.innerHeight;
@@ -12,13 +13,11 @@ function init() {
     loader.style.background = 'greenyellow';
 
     let downloadingImage = new Image();
-    downloadingImage.src = "img/file.svg"
+    downloadingImage.src = "img/file.svg";
     downloadingImage.onload = function () {
         console.log('Loaded image');
-
         loader.style.opacity = 0;
         continueAfter();
-
     };
 
 
