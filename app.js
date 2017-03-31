@@ -12,21 +12,19 @@ function init() {
     let width = window.innerWidth;
     let height = window.innerHeight;
 
-    // loader.style.width = width + 'px';
-    // loader.style.height = height + 'px';
-    // loader.style.position = 'absolute';
-    // loader.style.background = 'greenyellow';
-
     let downloadingImage = new Image();
     downloadingImage.src = "img/file.svg";
     downloadingImage.onload = function () {
-        console.log('Loaded image');
-        let loader = document.getElementById('loaderScene');
-        // loader.style.opacity = 0;
-        //continueAfter();
-        //let loader_tween = TweenLite.to(loader, 1, { opacity: 0 });
+        console.log('Loaded completed');
+        let loaderScene = document.getElementById('loaderScene');
+        let loader_tween = TweenLite.to(loaderScene, 1, { x: width, onComplete: onCompleteLoader });
     };
 
+    function onCompleteLoader() {
+        console.log('onCompleteLoader()');
+
+        continueAfter();
+    }
 
     function continueAfter() {
 
