@@ -29,7 +29,7 @@ function init() {
         let animate_HeaderScene = document.getElementById('animate_HeaderScene');
         let tween_HeaderScene = TweenLite.to(animate_HeaderScene, 0.1, { color: "white" });
 
-        var headerScene = new ScrollMagic.Scene({ triggerElement: trigger_HeaderScene });
+        var headerScene = new ScrollMagic.Scene({ triggerElement: trigger_HeaderScene, duration: 200 });
         headerScene.setTween(tween_HeaderScene); // trigger a TweenMax.to tween
         headerScene.addIndicators({ name: "Header" }); // add indicators (requires plugin)
         headerScene.addTo(controller);
@@ -38,7 +38,7 @@ function init() {
         //Game Scene
         let trigger_GameScene = document.getElementById('trigger_GameScene');
         let animate_GameScene = document.getElementById('animate_GameScene');
-        let tween_GameScene = TweenLite.to(animate_GameScene, 0.1, { color: "white" });
+        let tween_GameScene = TweenLite.to(animate_GameScene, 1, { color: "white" });
 
         var gameScene = new ScrollMagic.Scene({ triggerElement: trigger_GameScene });
         gameScene.setTween(tween_GameScene); // trigger a TweenMax.to tween

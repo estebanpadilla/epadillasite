@@ -1,6 +1,12 @@
 html, body {
 	margin: 0px;
 	padding: 0px;
+	background-color:lightgreen;
+
+}
+
+::-webkit-scrollbar { 
+    display: none; 
 }
 
 h1 {
@@ -9,17 +15,6 @@ h1 {
 	font-size: 60px;
 	font-family: Arial, Helvetica, sans-serif;
 }
-
-.parallaxParent {
-	height: 100vh;
-	overflow: hidden;
-}
-.parallaxParent > * {
-	height: 200%;
-	position: relative;
-	top: -100%;
-}
-
 
 .spacer {
 	text-align: center;
