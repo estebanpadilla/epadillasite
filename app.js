@@ -1,11 +1,5 @@
 //http://scrollmagic.io/docs/index.html
 window.addEventListener('load', init, false);
-window.addEventListener('loadstart', preInit, false);
-
-function preInit() {
-    console.log('loadstart()');
-
-}
 
 function init() {
     w3IncludeHTML();
