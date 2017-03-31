@@ -24,6 +24,17 @@ function init() {
 
         let controller = new ScrollMagic.Controller();
 
+        //Header Scene
+        let trigger_HeaderScene = document.getElementById('trigger_HeaderScene');
+        let animate_HeaderScene = document.getElementById('animate_HeaderScene');
+        let tween_HeaderScene = TweenLite.to(animate_HeaderScene, 0.1, { color: "white" });
+
+        var headerScene = new ScrollMagic.Scene({ triggerElement: trigger_HeaderScene });
+        headerScene.setTween(tween_HeaderScene); // trigger a TweenMax.to tween
+        headerScene.addIndicators({ name: "Header" }); // add indicators (requires plugin)
+        headerScene.addTo(controller);
+
+
         //Game Scene
         let trigger_GameScene = document.getElementById('trigger_GameScene');
         let animate_GameScene = document.getElementById('animate_GameScene');

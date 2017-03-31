@@ -1,0 +1,12 @@
+.headerScene {
+	position:fixed;
+	top: 0px;
+	min-height: 30px;
+	background-color:orangered;
+	width: 100%;
+}
+
+.trigger_HeaderScene {
+	position: absolute;
+	top: 60%;
+}
